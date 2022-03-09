@@ -1,4 +1,4 @@
-# Login-Signup
+# Login and Signup forms
 
 Simply styled HTML login, signup and forgotten password forms, appearing after specific user's action
 
