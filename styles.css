@@ -1,0 +1,217 @@
+html, body {
+	margin: 0px;
+	height: 100%;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #fafafa;
+}
+
+.page1 {
+	margin: 0px;
+	overflow: auto;
+	background-color: #fafafa
+}
+
+.welcome {
+	float: left;
+	color: rgba(87, 110, 122, 1.0);
+	font-family: serif;
+	font-size: 1.5rem;
+	border-radius: 20px;
+	display: inline-block;
+	padding: 6rem;
+	padding-left: 0rem;
+	padding-right: 4rem;
+	overflow: hidden;
+	text-align: center;
+}
+
+.login_form {
+	color: rgba(87, 110, 122, 1.0);
+	font-family: serif;
+	font-size: 1.5rem;
+	border-radius: 20px;
+	display: block;
+	text-align: center;
+	padding: 5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	height: max-content;
+	float: left;
+	filter: saturate(1.5);
+}
+
+.registration_form {
+	color: rgba(87, 110, 122, 1.0);
+	font-family: serif;
+	font-size: 1.2rem;
+	display: block;
+	text-align: center;
+	float: left;
+	padding: 3rem;
+	border-radius: 20px;
+	height: max-content;
+	filter: saturate(1.5);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	width: 100%;
+	padding: 20px 60px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 30px;
+	color: slategray;
+	height: 1.5rem;
+}
+
+input {
+	height: 1.7rem;
+	width: 20rem;
+	border-radius: 20px;
+	border: 2px solid rgba(66, 89, 102, 0.3);
+	position: relative;
+	font-size: 1.5rem;
+	text-indent: 0.1rem;
+	outline: none;
+	box-sizing: border-box;
+	color: inherit;
+}
+
+input:focus, .forgot_password:focus {
+	outline-color: rgba(205, 92, 92, 0.1);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	color: rgb(66, 89, 102);
+	border: 0px;
+	text-decoration: none;
+}
+
+.submit_button {
+	background-color: rgba(87, 110, 122, 0.85);
+	width: 12rem;
+	height: 2.2rem;
+	border-radius: 30px;
+	border: 0px;
+	position: relative;
+	font-size: 1.2rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	margin: 20px;
+}
+
+.submit_button:hover {
+	outline-color: white;
+	color: lightgray;
+	font-weight: 2x;
+}
+
+.submit_button:focus {
+	outline-color: rgba(205, 92, 92, 0.1);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	color: rgb(66, 89, 102);
+	border: 0px;
+	text-decoration: none;
+	background: rgba(87, 110, 122, 0.2)
+}
+
+.submit_button:hover, .forgot_password:hover, input:hover {
+	text-decoration: none;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.forgot_password:hover {
+	background-color: rgba(145, 4, 21, 0.5);
+	padding: 0.5rem;
+	color: white
+}
+
+.forgot_password {
+	font-size: 1.2rem;
+	color: #910415;
+	border-radius: 4px;
+	padding: 0.3rem;
+	text-decoration: none;
+}
+
+.form_divider {
+	display: inline-block;
+	border-bottom: 1px solid rgba(66, 89, 102, 0.2);
+}
+
+.login_form .form_divider {
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+
+noscript {
+	font-size: 1.3rem;
+	color: white;
+	background: #910415;
+	text-align: center;
+	margin-top: 0px;
+	position: fixed;
+	width: -webkit-fill-available;
+	z-index: 200;
+	top: 4rem;
+	padding: 0.5rem;
+}
+
+label.error {
+	color: indianred;
+	border-radius: 5px;
+	text-align: center;
+}
+
+label {
+	display: flex;
+}
+
+.error {
+	display: flex;
+	right: 2rem;
+	position: absolute;
+	top: 1.2rem;
+}
+
+.user_input, .pass_input {
+	position: relative;
+}
+
+::placeholder {
+	font-size: 20px;
+	color: slategray;
+	opacity: 0.7;
+}
+
+.has-error {
+	border: 1px solid #910415 !important;
+}
+
+div[aria-label]:hover::after, div[aria-label]:focus::after {
+	content: attr(aria-label);
+	position: absolute;
+	display: block;
+	width: 6rem;
+	top: 0;
+	color: #910415;
+	font-weight: normal;
+	font-size: 1rem;
+	padding: 0.5rem;
+	background: rgba(255, 255, 255, 1);
+	margin-left: 1rem;
+	border-radius: 20px;
+	text-align: center;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 11;
+}

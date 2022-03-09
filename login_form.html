@@ -1,0 +1,34 @@
+<form class= "login_form" id="login_form" action="login_validation.php" method="POST" onsubmit="return false;">
+	<table>
+		<!--  input field for username or email -->
+		<tr class="user_input">
+			<td><label for='user'><input autofocus type="text" name="user" placeholder='Username or e-mail' id ='user'/></label></td>
+			<td><span id = "user_err" class="error"></span></td>
+		</tr> 
+		<!--  input field for password -->
+		<tr class="pass_input">
+			<td><label for='pass' ><input type="password" name="pass" placeholder='Password' id ='pass'/></label></td>
+			<td><span id="pass_err" class="error" ></span></td>
+		</tr>
+		
+		<!--  !!! uncomment to add Google reCAPTCHA !!! -->
+		<!--<tr>
+		<td colspan="3"><div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div></td>
+		</tr> 
+		-->
+		
+		<tr>
+			<td colspan="3"><button  type="submit" class="submit_button">Log in</button></td>
+		</tr>
+		<tr class="form_divider">
+			<td colspan="3"><a href="form_for_mailer.html" class="forgot_password" >Forgot password?</a></td>
+		</tr>
+		<tr>
+			<td  colspan ="3"  >Don't have an account?</td>
+		</tr> 
+		
+		<tr>
+			<td colspan ="3"><button type="button" onclick="tog_nav();" class="submit_button" >Sign up</button></td>
+		</tr>
+	</table> 
+</form>

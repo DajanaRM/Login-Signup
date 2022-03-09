@@ -1,0 +1,40 @@
+ <form action="/registration.php" method="POST" id="registration_form" class="registration_form" style="display:none;"onsubmit="return false;">
+		<table>
+			<tr class="user_input">
+				<td><label for='fname'><input autofocus type="text" name="fname"  placeholder='First name' id ='fname'/></label></td>
+				<td><span id="fname_err" class="error"></span></td>
+			</tr>    
+			<tr class="user_input">
+				<td><label for='lname'><input  type="text" name="lname" placeholder='Last name' id ='lname'/></label></td>
+				<td><span id="lname_err" class="error"></span></td>
+			</tr>    
+			<tr class="user_input">
+				<td><label for='username'><input  type="text" name="username" placeholder='Username' id ='username'/></label></td>
+				<td><span id="username_err" class="error"></span></td></tr>  
+			<tr class="user_input">
+				<td><label for='reg_email'> <input  type="text" name="reg_email" placeholder='E-mail address' id ='reg_email'/></label></td>
+				<td><span id="reg_email_err" class="error"></span></td></tr>      
+			<tr class="user_input">
+				<td><label for='reg_password'><input type="password" name="reg_password" placeholder="Password" id ="reg_password"/></label></td>
+				<td><span id="reg_password_err" class="error"></span></td></tr>
+			<tr class="user_input">
+				<td><label  for='confirm_password'><input type="password" name="confirm_password"  placeholder='Confirm password' id ='confirm_password'/></label></td>
+				<td><span id="confirm_password_err" class="error"></span></td></tr>
+				<tr>
+			<!--   uncomment to add Google reCAPTCHA -->
+			<!--
+			<tr>
+				<td colspan="3"><div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div></td>
+			</tr> 
+			-->
+				<td class="form_divider" colspan="3"><button type="submit" class="submit_button">Submit</button><button type="reset" class="submit_button">Reset</button></td>
+			</tr>
+			<tr >
+				<td  colspan ="3"  >Already have an account?</td>
+			</tr> 
+			<tr>
+				<!--switch to login form -->
+				<td colspan ="3"><button type="button" onclick="tog_nav2();" class="submit_button" >Sign in</button></td>
+			</tr>
+		</table>
+ </form>
