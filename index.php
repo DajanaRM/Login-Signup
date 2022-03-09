@@ -29,10 +29,8 @@
 					element1.style.display = "block";
 					element2.style.display = "none";
 					$(document).prop('title', 'Sign up')
-					}
-				
-				}
-		
+					}				
+				}		
 		</script>
 		<script>
 		/*make login form hidden if registration form is visible*/
