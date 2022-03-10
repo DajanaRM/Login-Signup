@@ -5,17 +5,15 @@ $(document).ready(function () {
 	   var resetEmail = $('#resetEmail').val()
 	   formData = $("#reset_password").serialize();
 		console.log(resetEmail);
+	$.ajax({
 
-
-$.ajax({
-
-        type:"POST",
-        url:'??????', /* <----mailer file path*/
+       		 type:"POST",
+        	url:'??????', /* <----mailer file path*/
 		data: formData,
 		dataType: "json",
 		encode: true
    
-        }).done(function (data) {
+       	 }).done(function (data) {
 			console.log(data);
 			if (!data.success) {
 				console.log(data.errors.resetEmail)
